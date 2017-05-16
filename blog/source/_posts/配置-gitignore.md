@@ -55,15 +55,15 @@ excludesfile = /Users/reon/.gitignore_global
 把从 GitHub 上下载的自定义修改后的 .gitignore 文件 copy 到该路径即可。
 
 ## 添加 .gitignore 后不生效怎么办
-1. you must pay attention to the global gitignore file which sometimes may influence your gitignore.
-2. When you add something into .gitignore file。First commit your current changes, or you will lose them.
+* you must pay attention to the global gitignore file which sometimes may influence your gitignore.
+* When you add something into .gitignore file。First commit your current changes, or you will lose them.
 
 ```
 $ git rm -r --cached .
 $ git add .
 $ git commit -m "fixed untracked files"  
 ```
-3. When you remove something from .gitignore file.The above steps will not work for you. First commit your current changes, or you will lose them.
+* When you remove something from .gitignore file.The above steps will not work for you. First commit your current changes, or you will lose them.
 
 ```
 git add -f "filetype"
